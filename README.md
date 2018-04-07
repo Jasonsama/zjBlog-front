@@ -1,2 +1,2 @@
 # zjBlog-front
-used Vue.js.
+Based on Vue.js
