@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// import App from '@/App'
+// import HelloWorld from '@/components/HelloWorld'
 import Articles from '@/components/Articles/Articles'
 import About from '@/components/About/About'
-
-import Index from '@/components/Index'
+import Index from '@/components/Index/Index'
 
 Vue.use(Router)
 
@@ -12,21 +12,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '首页',
+      name: 'App',
       component: Index
     },
     {
-      path: '/示例',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/index',
+      name: '首页',
+      component: Index
     },
+    // {
+    //   path: '/hello-world',
+    //   name: '示例',
+    //   component: HelloWorld
+    // },
     {
-      path: '/Articles',
+      path: '/articles',
       name: '文章',
       component: Articles
     },
     {
-      path: '/About',
+      path: '/about',
       name: '关于',
       component: About
     }
