@@ -13,7 +13,7 @@ Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 const i18n = new VueI18n({
-    locale: 'zh', // 语言标识
+    locale: localStorage.getItem('g_locale') ? localStorage.getItem('g_locale') : 'zh',
     messages: {
         'zh': require('./common/lang/zh'),
         'en': require('./common/lang/en')

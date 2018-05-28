@@ -82,7 +82,7 @@ export default {
 .article-frame{
   width: 80%;
   max-width: 900px;
-  margin:50px auto 20px auto;
+  margin:0px auto 20px auto;
   padding: 10px 0px;
   /*background-color: #0f0;*/
   min-width: 300px;

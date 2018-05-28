@@ -8,7 +8,7 @@
     </div>
     <div class="content">
       <!-- {{$t("article.content")}} -->
-      <p>{{Article.content}}</p>
+      {{Article.content}}
       <p>
         fgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditorfgdhgfdhghg欢迎使用ueditor
       </p>
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     ShowAllContent: function (articleId) {
-      alert(articleId)
+      this.$router.push({name: 'article', params: { id: articleId }}) // -> /user/123
     }
   }
   // props: ['article']
@@ -79,7 +79,7 @@ export default {
 .cover-div{
   position: relative;
   margin-top: -220px;
-  z-index: 999;
+  z-index: 100;
   width: 100%;
   height: 250px;
 }

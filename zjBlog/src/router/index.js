@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import App from '@/App'
 // import HelloWorld from '@/components/HelloWorld'
+import Article from '@/components/Article/Article'
 import Articles from '@/components/Articles/Articles'
 import About from '@/components/About/About'
 import Index from '@/components/Index/Index'
@@ -27,13 +28,18 @@ export default new Router({
     // },
     {
       path: '/articles',
-      name: '文章',
+      name: '文章列表',
       component: Articles
     },
     {
       path: '/about',
       name: '关于',
       component: About
+    },
+    {
+      path: '/article/:id',
+      name: '文章',
+      component: Article
     }
   ]
 })
